@@ -29,20 +29,6 @@ module.exports = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    testnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545",
-      chainId: 97,
-      gasPrice: 20000000000,
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    mainnet: {
-      url: "https://bsc-dataseed.binance.org/",
-      chainId: 56,
-      gasPrice: 20000000000,
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
